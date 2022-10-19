@@ -1,0 +1,244 @@
+body{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden ;
+    background-color:black;
+    color: white;
+}
+
+.anime{
+    width:100%;
+    padding-block: 15px;
+    background: linear-gradient( 0.25turn, rgb(52, 223, 194) , rgb(61, 207, 146), rgb(121, 188, 209));
+    animation-name: header;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@keyframes header {
+    0% { background: linear-gradient( 0.25turn, rgb(52, 223, 194) , rgb(61, 207, 146),rgb(121, 188, 209));}
+    35% { background: linear-gradient( 0.25turn, rgb(61, 207, 146),rgb(121, 188, 209),rgb(52, 223, 194) );}
+    70% { background: linear-gradient( 0.25turn,rgb(121, 188, 209),rgb(52, 223, 194),rgb(61, 207, 146));}
+   100% { background: linear-gradient( 0.25turn, rgb(52, 223, 194) , rgb(61, 207, 146),rgb(121, 188, 209));} 
+}
+
+.logo{
+    text-decoration:none;
+    background: linear-gradient( 0.25turn, rgb(155, 138, 61) , rgb(184, 192, 68), rgb(233, 223, 81),rgb(236, 229, 130));
+    font-size: 25px;
+    margin-inline: 20px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 12px 3px gray;
+}
+
+.nav-link{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.nav-link a{
+    color: black;
+    margin-inline: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-link a:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.anime label{
+    margin-top: 10px;
+    font-weight: 200;
+    color: rgb(82, 82, 82);
+}
+
+
+/* slideshow css */
+.mySlides{
+    display: none;
+}
+
+.slideshow-container{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* arrow prev and next */
+.prev, .next{
+    cursor: pointer;
+    margin-inline: 1px;
+    position: absolute;
+    top:45%;
+    padding: 15px;
+    text-align: left;
+    color:white;
+}
+
+.next{
+    right:0;
+}
+
+.prev:hover, .next:hover {
+    transition: 1px;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+    background-color: rgba(238, 238, 238, 0.8);
+    color: black;
+}
+
+.movies{
+    width: 95%;
+    display:flex;
+    flex-direction: column;
+    column-gap: 10px;
+    margin: 10px;
+    justify-content: center;
+    margin-inline: 40px;
+    
+}
+.movies hr{
+    width: 100%;
+    border:  2px solid white;
+}
+.movies-container{
+    display: flex;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    margin-block: 20px;
+}
+
+.movies-details{
+    margin-right: 10px;
+    max-width: 180px;
+    max-height: 200px;
+    margin-block: 10px;
+}
+.movies-details img{
+    width: 100%;
+    height:100%;
+    /* display:none; */
+}
+.movies-details:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 10px  2px white;
+}
+.movie-name{
+    width: 180px;
+    height: 60px;
+    position: absolute;
+    margin-top: -70px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    background-color:black;
+    color: white;
+    opacity: 0.6;
+}
+.movie-name p{
+    font-size: 13px;
+    display: flex;
+}
+
+.movie-name:hover{
+    cursor: pointer;
+}
+
+.movies-container-list{
+    display: flex;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-block: 20px;
+    margin-inline: 20px;;
+}
+
+.filter{
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    margin-left: 100px;
+    justify-content: space-between;
+}
+
+.options{
+    width: 15%;
+    height: 40px;
+    padding-left: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: rgb(255, 217, 0);
+}
+.options:hover{
+    cursor:pointer;
+}
+.search{
+    width: 50%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+   
+}
+.search input{
+    width:100%;
+    margin:0;
+    padding-left:15px;
+    font-size: 18px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px ;
+    border: none;
+    background-color: rgb(255, 217, 0);
+}
+.search img{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px ;
+    background-color: rgb(255, 217, 0);
+}
+.search img:hover{
+    cursor: pointer;
+}
+
+.movies-items{
+    margin-right: 10px;
+    max-width: 180px;
+    max-height: 200px;
+    margin-block: 10px;
+    /* display: none; */
+}
+.movies-items img{
+    width: 100%;
+    height:100%;
+}
+.movies-items:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 10px  2px white;
+}
+
+#genere{
+    display: block;
+}
+
+.selectOption:hover{
+    cursor: pointer;
+}
+.show{
+    display: block;
+
+}
+

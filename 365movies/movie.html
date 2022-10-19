@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="index.css" >
+</head>
+<body>
+    <header>
+        <nav class="anime">
+            <a href="index.html" class="logo">365</a>
+            <div class="nav-link">
+                <a href="movie.html">Movies</a>
+                <a href="#">TV Series</a>
+                <a href="#">Audio</a>
+            </div>
+           
+        </nav>
+    </header>
+  
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="image4.jpg" height="500px" width="100%" >
+        </div>
+
+        <div class="mySlides">
+            <img src="image5.jpg" height="500px" width="100%" >
+        </div>
+
+        <div class="mySlides">
+            <img src="image6.jpg" height="500px" width="100%" >
+        </div>
+    </div>
+    
+    <!-- left and right coltrols -->
+        <a class="prev" onclick="plusSlides(-1)">
+            &#10094;
+        </a>
+
+        <a class="next" onclick="plusSlides(1)">
+            &#10095;
+        </a>
+    </div>
+
+    <div class="filter">
+        <select class="options" onchange="filter()" id="mySelectContainer">
+            <option id="genere">Genere</option>
+            <option id="all" class="selectOption" onchange="filterSelection('all')">All</option>
+            <option id="drama" class="selectOption" onchange="filterSelection('drama')">Drama</option>
+            <option id="action" class="selectOption" onchange="filterSelection('action')">Action</option>
+            <option id="scifi" class="selectOption" onchange="filterSelection('scific')">Sci-Fi</option>
+        </select>
+
+        <div class="search">
+            <input type="text" placeholder="search for movies...."> 
+            <img src="https://img.icons8.com/color/48/000000/search--v1.png" alt="search"/>
+        </div>
+       
+    </div>
+
+    <div class="movies-container-list">
+        <!-- Action movies -->
+            <div class="movies-items action">
+               <img src="action/badcompany.jpeg" >
+               <div class="movie-name">
+                   <label>Bad Company</label>
+                   <p>Thriller,Action,Comedy</p>
+               </div>
+           </div>
+
+
+
+           <div class="movies-items action" >
+               <img src="action/BlackMan.jpeg" >
+               <div class="movie-name">
+                   <label>BlackMan</label>
+                   <p>Action,Comedy,Mystrious</p>
+               </div>
+           </div>
+           <div class="movies-items action">
+               <img src="action/civilwar.jpeg" >
+               <div class="movie-name">
+                   <label>civilwar</label>
+                   <p>Thriller,Action,Comedy</p>
+               </div>
+           </div>
+           <div class="movies-items action" >
+               <img src="action/fastandfurious.jpeg" >
+               <div class="movie-name">
+                   <label>fast and furious</label>
+                   <p>Thriller,Action,Comedy</p>
+               </div>
+           </div>
+           <div class="movies-items action" >
+               <img src="action//grayman.jpeg" >
+               <div class="movie-name">
+                   <label>Gray Man</label>
+                   <p>Thriller,Action,Comedy</p>
+               </div>
+           </div>
+           <div class="movies-items action" >
+               <img src="action//heros.jpeg" >
+               <div class="movie-name">
+                   <label>Heros</label>
+                   <p>Thriller,Action,Comedy</p>
+               </div>
+            </div>
+            <div class="movies-items action">
+                <img src="action/monkeyKing.jpeg" >
+                <div class="movie-name">
+                    <label>Monkey King</label>
+                    <p>Thriller,Action,Comedy</p>
+                </div>
+            </div>
+            <div class="movies-items action" >
+                <img src="action/onChartered.jpeg" >
+                <div class="movie-name">
+                    <label>On Chartered</label>
+                    <p>Thriller,Action,Comedy</p>
+                </div>
+            </div>
+            <div class="movies-items action" >
+                <img src="action/power.jpeg" >
+                <div class="movie-name">
+                    <label>Power</label>
+                    <p>Thriller,Action,Comedy</p>
+                </div>
+            </div>
+            <div class="movies-items action">
+                <img src="action/war.jpeg" >
+                <div class="movie-name">
+                    <label>War</label>
+                    <p>Thriller,Action,Comedy</p>
+                </div>
+            </div>
+            <!-- Drama movies -->
+            <div class="movies-items action" >
+                <img src="drama/beautyAndBeast.jpeg" >
+                <div class="movie-name">
+                    <label>Beauty And Beast</label>
+                    <p>Thriller, Mystry,Comedy</p>
+                </div>
+            </div>
+            <div class="movies-items action" >
+                <img src="drama/Crash.jpeg" >
+                <div class="movie-name">
+                    <label>Crash</label>
+                    <p>Thriller, Mystry,Comedy</p>
+                </div>
+            </div>
+            <div class="movies-items action">
+                <img src="drama/pink.jpeg" >
+                <div class="movie-name">
+                    <label>Pink</label>
+                    <p>Thriller, Mystry,Comedy</p>
+                </div>
+            </div>
+            <div class="movies-items action">
+                <img src="drama/god.jpeg" >
+                <div class="movie-name">
+                    <label>God</label>
+                    <p>Thriller, Mystry,Comedy</p>
+                </div>
+            </div>
+            <div class="movies-items action" >
+                <img src="drama/goodnurse.jpeg" >
+                <div class="movie-name">
+                    <label>Good Nurse</label>
+                    <p>Thriller, Mystry,Comedy</p>
+                </div>
+            </div>
+            <div class="movies-items action" >
+                <img src="drama/instantfamily.jpeg" >
+                <div class="movie-name">
+                    <label>instant family</label>
+                    <p>Thriller, Mystry,Comedy</p>
+                </div>
+            </div>
+            <div class="movies-items action" >
+                <img src="drama/PoliceMan.jpeg" >
+                <div class="movie-name">
+                    <label>PoliceMan</label>
+                    <p>Thriller, Mystry,Comedy</p>
+                </div>
+            </div>
+            <div class="movies-items action" >
+                <img src="drama/rustom.jpeg" >
+                <div class="movie-name">
+                    <label>Rustom</label>
+                    <p>Thriller, Mystry,Comedy</p>
+                </div>
+            </div>
+            <div class="movies-items action" >
+                <img src="drama/shawshank.jpeg" >
+                <div class="movie-name">
+                    <label>shawshank</label>
+                    <p>Thriller, Mystry,Comedy</p>
+                </div>
+            </div>
+            <div class="movies-items action" >
+                <img src="drama/shikar.jpeg" >
+                <div class="movie-name">
+                    <label>shikar</label>
+                    <p>Thriller, Mystry,Comedy</p>
+                </div>
+            </div>
+            <div class="movies-items action" >
+                <img src="drama/tigerRising.jpeg" >
+                <div class="movie-name">
+                    <label>tigerRising</label>
+                    <p>Thriller, Mystry,Comedy</p>
+                </div>
+            </div>
+            <div class="movies-items action">
+                <img src="drama/titanic.jpeg" >
+                <div class="movie-name">
+                    <label>titanic</label>
+                    <p>Thriller, Mystry,Comedy</p>
+                </div>
+            </div>
+
+            <!-- Sci Fic -->
+            <div class="movies-items scific" >
+                <img src="scific/astro.jpeg" >
+                <div class="movie-name">
+                    <label>Astro</label>
+                    <p>Thriller, Mystry,Comedy</p>
+                </div>
+            </div>
+            <div class="movies-items scific">
+                <img src="scific/atlanta.jpeg" >
+                <div class="movie-name">
+                    <label>Atlanta</label>
+                    <p>drama,Sci-Fi, Mystry,</p>
+                </div>
+            </div>
+            <div class="movies-items scific" >
+                <img src="scific/farcase.jpeg" >
+                <div class="movie-name">
+                    <label>Farcase</label>
+                    <p>scific,Sci-Fi, Mystry,</p>
+                </div>
+            </div>
+            <div class="movies-items" >
+                <img src="scific/avtar.jpeg" >
+                <div class="movie-name">
+                    <label>Avtar</label>
+                    <p>scific,Sci-Fi, Mystry,</p>
+                </div>
+            </div>
+            <div class="movies-items" >
+                <img src="scific/kingkong.jpeg" >
+                <div class="movie-name">
+                    <label>king kong</label>
+                    <p>scific,Sci-Fi, Mystry,</p>
+                </div>
+            </div>
+            <div class="movies-items scific" >
+                <img src="scific/robot.jpeg" >
+                <div class="movie-name">
+                    <label>Robot</label>
+                    <p>scific,Sci-Fi, Mystry,</p>
+                </div>
+            </div>
+            <div class="movies-items scific" >
+                <img src="scific/runner.jpeg" >
+                <div class="movie-name">
+                    <label>runner</label>
+                    <p>Thriller, Mystry,Comedy</p>
+                </div>
+            </div>
+            <div class="movies-items scific" >
+                <img src="scific//sark.jpeg" >
+                <div class="movie-name">
+                    <label>Shark</label>
+                    <p>Thriller, Mystry,Comedy</p>
+                </div>
+            </div>
+            <div class="movies-items scific" >
+                <img src="scific/space.jpeg" >
+                <div class="movie-name">
+                    <label>Space</label>
+                    <p>Thriller, Mystry,Comedy</p>
+                </div>
+            </div>
+            <div class="movies-items scific" >
+                <img src="scific/terminator.jpeg" >
+                <div class="movie-name">
+                    <label>Terminator</label>
+                    <p>Thriller, Mystry,Comedy</p>
+                </div>
+            </div>
+
+    </div>
+
+
+
+
+    <footer class="anime">
+        <a href="index.html" class="logo">365</a>
+        <label>Powered by 365 Entertainment Portal 2022. All Rights Reserved.</label>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>
