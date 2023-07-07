@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="clock.css" />
+  </head>
+  <body>
+    <!-- analog clock -->
+    <div class="clock">
+      <div class="dot"></div>
+      <div class="hand hrs" id="hours"></div>
+      <div class="hand min" id="minute"></div>
+      <div class="hand sec" id="seconds"></div>
+
+      <div class="number number1">1</div>
+      <div class="number number2">2</div>
+      <div class="number number3">3</div>
+      <div class="number number4">4</div>
+      <div class="number number5">5</div>
+      <div class="number number6">6</div>
+      <div class="number number7">7</div>
+      <div class="number number8">8</div>
+      <div class="number number9">9</div>
+      <div class="number number10">10</div>
+      <div class="number number11">11</div>
+      <div class="number number 12">12</div>
+    </div>
+
+    <!-- Digital Clock -->
+    <div class="dig-clock">
+      <div class="dig-hour dig" id="data-hour">1</div>
+      <div class="dig-min dig" id="data-min">1</div>
+      <div class="dig-sec dig" id="data-sec">1</div>
+    </div>
+
+    <script>
+      // analog clock
+      setInterval(setClock, 1000);
+      const hours = document.getElementById("hours");
+      const minute = document.getElementById("minute");
+      const seconds = document.getElementById("seconds");
+
+      function setClock() {
+        const currentDate = new Date();
+        const secondRatio = currentDate.getSeconds() / 60;
+        const minuteRatio = (secondRatio + currentDate.getMinutes()) / 60;
+        const hoursRatio = (minuteRatio + currentDate.getHours()) / 12;
+
+        setRotation(seconds, secondRatio);
+        setRotation(minute, minuteRatio);
+        setRotation(hours, hoursRatio);
+      }
+
+      function setRotation(element, rotationRatio) {
+        element.style.setProperty("--rotation", rotationRatio * 360);
+      }
+
+      setClock();
+
+      // digital clock
+
+      setInterval(digClock, 1000);
+
+      const dig_hour = document.getElementById("data-hour");
+      const dig_min = document.getElementById("data-min");
+      const dig_sec = document.getElementById("data-sec");
+
+      function digClock() {
+        const currentDate = new Date();
+
+        const second = currentDate.getSeconds();
+        const minute = currentDate.getMinutes();
+        const hours = currentDate.getHours();
+
+        changeNumer(dig_sec, second);
+        changeNumer(dig_min, minute);
+        changeNumer(dig_hour, hours);
+      }
+
+      function changeNumer(element, newTime) {
+        element.innerHTML = newTime;
+      }
+
+      digClock();
+    </script>
+  </body>
+</html>
